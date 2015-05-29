@@ -19,7 +19,7 @@ def convertsizes(st, to='mb', strip=True):
     :return: A float or string (depending on whether strip is True or False)
     :rtype: float or str
     """
-    legends = {'b': 0, 'kb': 1, 'mb': 2, 'gb': 3, 'tb': 4}
+    legends = {'b': 0, 'kb': 1, 'mb': 2, 'gb': 3, 'tb': 4, 'pd': 5}
     res = 0
 
     st = st.lower()
