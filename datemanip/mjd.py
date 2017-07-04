@@ -53,7 +53,7 @@ def __mjd2000_fraction_to_timedelta(mjt):
 
 def __split_timedelta(tm):
     """
-    Split a timedelta into a tuple of (hours, minutes, seconds)
+    Split a timedelta into a tuple of (hours, minutes, seconds, microseconds)
 
     :param tm datetime.timedelta: the timedelta object to split
     :return: a tuple
