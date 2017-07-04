@@ -19,7 +19,7 @@ def mjd2000_to_date(mjd):
     return datetime.datetime(dat[0], dat[1], dat[2],
                              *__split_timedelta(tm))
                              
-    
+
 def mjd2000_to_ISO(mjd):
     """
     Convert a MJD2000 date into an ISO8601 string
@@ -29,6 +29,16 @@ def mjd2000_to_ISO(mjd):
     :rtype: string
     """
     return mjd2000_to_date(mjd).isoformat()
+
+
+def mjd2000_strftime(mjd, fmt):
+    """
+    Convert a MJD2000 date into a date string according to fmt
+
+    :param mjd float: the MJD2000 date to convert
+    :paramt fmt string: strftime() style string
+    """
+    return mjd2000_to_date(mjd).strftime(fmt)
 
 
 def __mjd2000_fraction_to_timedelta(mjt):

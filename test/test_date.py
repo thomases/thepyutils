@@ -23,6 +23,11 @@ class MJD2000Test(unittest.TestCase):
         self.assertEqual(tdm.mjd2000_to_ISO(6393.499178),
                          '2017-07-03T23:58:48.979200')
 
+    def test_mjd2000_strftime(self):
+        self.assertEqual(tdm.mjd2000_strftime(6393.499178, "%FT%T"),
+                         '2017-07-03T23:58:48')
+
+        
     # def test_mjd_fraction_to_timedelta(self):
     #     self.assertIsInstance(tdm.__mjd2000_fraction_to_timedelta(
     #         jdcal.jd2gcal(jdcal.MJD_0 + jdcal.MJD_JD2000, mjd)[3]),
