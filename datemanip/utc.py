@@ -12,7 +12,7 @@ def convert_to_utc(fromtzone: str, fromdate: str, pr : bool = False) -> datetime
 
     :param fromtzone: timezone to convert from
     :param fromdate: date/time to convert from
-    :param pr: wether to print the result in addition to returniing it
+    :param pr: wether to print the result in addition to returning it
     :returns: datetime object with time/date in UTC
     """
     dt = parser.parse(fromdate)
